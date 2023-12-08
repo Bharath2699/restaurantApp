@@ -1,0 +1,163 @@
+.food-item-card {
+  height: 350px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin: 15px;
+  background-color: azure;
+  box-shadow: currentColor;
+  overflow: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .food-item-card {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 0px;
+    margin-bottom: 20px;
+    border-color: azure;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+  }
+}
+.label {
+  margin: 10px;
+}
+.food-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  .food-item-details {
+    max-width: 200px;
+  }
+}
+
+.dish-name {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .dish-name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+.dish-image {
+  height: 90%;
+  width: 20%;
+  border-radius: 8px;
+}
+@media screen and (max-width: 767px) {
+  .dish-image {
+    height: 85px;
+    width: 100px;
+  }
+}
+.dish-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .dish-price {
+    font-size: 15px;
+  }
+}
+.dish-calories {
+  color: orange;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .dish-calories {
+    font-size: 15px;
+  }
+}
+.dish-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .dish-description {
+    font-size: 12px;
+  }
+}
+
+.add-on-card {
+  height: 60px;
+  width: 200px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: green;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .add-on-card {
+    height: 35px;
+    width: 120px;
+    border-radius: 40px;
+  }
+}
+
+.count-button {
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .count-button {
+    font-size: 14px;
+  }
+}
+.count-content {
+  font-size: 20px;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .count-content {
+    font-size: 14px;
+  }
+}
+.add-button {
+  height: 40px;
+  width: 200px;
+  border-radius: 9px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .add-button {
+    height: 30px;
+    width: 150px;
+  }
+}
+
+.not-available {
+  color: red;
+  font-size: 22px;
+}
+
+.customization-status {
+  color: rgb(49, 40, 177);
+  font-size: 20px;
+}
