@@ -1,6 +1,6 @@
 import {Component} from 'react'
-import {FaCartArrowDown} from 'react-icons/fa'
 import CartContext from '../../context/CartContext'
+import Header from '../Header'
 import Tab from '../Tab'
 import CardItem from '../CardItem'
 import './index.css'
@@ -86,13 +86,7 @@ class RestaurantMainView extends Component {
           console.log(cartList)
           return (
             <div className="main_container">
-              <div className="header-container">
-                <h1 className="name">{name}</h1>
-                <p className="my-orders">
-                  My Orders <FaCartArrowDown size={25} />
-                  <span className="length">{cartList.length}</span>
-                </p>
-              </div>
+              <Header name={name} />
               <div className="tap">
                 {categoryList.map(each => (
                   <Tab

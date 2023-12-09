@@ -32,7 +32,7 @@ const CardItem = props => {
         }
 
         const onClickAddon = () => {
-          addonCart(cardDetails)
+          addonCart({...cardDetails, count})
         }
 
         let color
