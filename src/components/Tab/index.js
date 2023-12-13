@@ -13,15 +13,13 @@ const Tab = props => {
     activeTab = 'active'
   }
   return (
-    <li className="tab-list">
-      <button
-        type="button"
-        className={`tab-button ${activeTab}`}
-        onClick={onClickTab}
-      >
-        {category}
-      </button>
-    </li>
+    <button
+      type="button"
+      className={`tab-button ${activeTab}`}
+      onClick={onClickTab}
+    >
+      {category}
+    </button>
   )
 }
 export default Tab

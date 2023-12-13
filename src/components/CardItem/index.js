@@ -24,7 +24,9 @@ const CardItem = props => {
         } = cardDetails
 
         const onClickMinusButton = () => {
-          setCount(prevState => prevState - 1)
+          if (count > 1) {
+            setCount(prevState => prevState - 1)
+          }
         }
 
         const onClickPlusButton = () => {
@@ -72,13 +74,15 @@ const CardItem = props => {
                       +
                     </button>
                   </div>
-                  <button
-                    type="button"
-                    onClick={onClickAddon}
-                    className="add-button"
-                  >
-                    Add To Cart
-                  </button>
+                  {count > 0 ? (
+                    <button
+                      type="button"
+                      onClick={onClickAddon}
+                      className="add-button"
+                    >
+                      Add To Cart
+                    </button>
+                  ) : null}
                 </>
               )}
               {!dishAvailability && (

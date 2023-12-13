@@ -1,11 +1,12 @@
 import {Component} from 'react'
+
 import CartContext from '../../context/CartContext'
 import Header from '../Header'
 import Tab from '../Tab'
 import CardItem from '../CardItem'
 import './index.css'
 
-class RestaurantMainView extends Component {
+class Home extends Component {
   state = {tapList: [], categoryList: [], categoryId: '', dishesList: []}
 
   componentDidMount() {
@@ -113,4 +114,4 @@ class RestaurantMainView extends Component {
     )
   }
 }
-export default RestaurantMainView
+export default Home

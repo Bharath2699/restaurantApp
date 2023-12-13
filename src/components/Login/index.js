@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 import {Redirect} from 'react-router-dom'
 import './index.css'
 
-class LoginRoute extends Component {
+class Login extends Component {
   state = {username: '', password: '', errorMsg: '', showErrorMsg: false}
 
   onChangeUsername = event => {
@@ -87,4 +87,4 @@ class LoginRoute extends Component {
     )
   }
 }
-export default LoginRoute
+export default Login

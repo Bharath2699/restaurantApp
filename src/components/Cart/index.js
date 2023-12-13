@@ -3,18 +3,17 @@ import Header from '../Header'
 import OrderedCartItem from '../OrderedCartItem'
 import './index.css'
 
-const CartRoute = () => (
+const Cart = () => (
   <CartContext.Consumer>
     {value => {
       const {cartList, removeAllCartItems} = value
-
       const onClickRemoveAll = () => {
         removeAllCartItems()
       }
 
       return (
         <div className="cart-route-container">
-          <Header name="UNI Resto Cafe" />
+          <Header />
           <button
             className="remove-all-button"
             onClick={onClickRemoveAll}
@@ -32,4 +31,4 @@ const CartRoute = () => (
     }}
   </CartContext.Consumer>
 )
-export default CartRoute
+export default Cart

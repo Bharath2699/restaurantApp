@@ -18,18 +18,19 @@ const Header = props => {
         }
 
         return (
-          <div className="header-container">
+          <nav className="header-container">
             <Link to="/">
               <h1 className="name">{name}</h1>
             </Link>
 
-            <p className="my-orders-card">
-              My Orders
-              <Link to="/cart">
+            <p className="my-orders-card">My Orders </p>
+            <Link to="/cart">
+              <button type="button">
                 <FaCartArrowDown size={25} />
-              </Link>
-              <span className="length">{cartList.length}</span>
-            </p>
+              </button>{' '}
+            </Link>
+            <span className="length">{cartList.length}</span>
+
             <button
               type="button"
               className="logout-button"
@@ -37,7 +38,7 @@ const Header = props => {
             >
               Logout
             </button>
-          </div>
+          </nav>
         )
       }}
     </CartContext.Consumer>

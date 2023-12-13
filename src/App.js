@@ -1,9 +1,9 @@
 import {Component} from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import CartContext from './context/CartContext'
-import RestaurantMainView from './components/RestaurantMainView'
-import LoginRoute from './components/LoginRoute'
-import CartRoute from './components/CartRoute'
+import Home from './components/Home'
+import Login from './components/Login'
+import Cart from './components/Cart'
 import ProtectedRoute from './components/ProtectedRoute'
 import './App.css'
 
@@ -86,9 +86,9 @@ class App extends Component {
       >
         <BrowserRouter>
           <Switch>
-            <Route exact path="/login" component={LoginRoute} />
-            <ProtectedRoute exact path="/" component={RestaurantMainView} />
-            <ProtectedRoute exact path="/cart" component={CartRoute} />
+            <Route exact path="/login" component={Login} />
+            <ProtectedRoute exact path="/" component={Home} />
+            <ProtectedRoute exact path="/cart" component={Cart} />
           </Switch>
         </BrowserRouter>
       </CartContext.Provider>
