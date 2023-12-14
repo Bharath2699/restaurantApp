@@ -27,7 +27,7 @@ const Header = props => {
             <Link to="/cart">
               <button type="button">
                 <FaCartArrowDown size={25} />
-              </button>{' '}
+              </button>
             </Link>
             <span className="length">{cartList.length}</span>
 

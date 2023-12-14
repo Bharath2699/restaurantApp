@@ -24,7 +24,7 @@ const CardItem = props => {
         } = cardDetails
 
         const onClickMinusButton = () => {
-          if (count > 1) {
+          if (count > 0) {
             setCount(prevState => prevState - 1)
           }
         }
