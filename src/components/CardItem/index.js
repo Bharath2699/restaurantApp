@@ -80,7 +80,7 @@ const CardItem = props => {
                       onClick={onClickAddon}
                       className="add-button"
                     >
-                      Add To Cart
+                      ADD TO CART
                     </button>
                   ) : null}
                 </>

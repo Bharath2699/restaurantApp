@@ -55,7 +55,7 @@ const OrderedCartItem = props => (
               </button>
             </div>
           </div>
-          <img src={dishImage} className="dish-images" alt="Img" />
+          <img src={dishImage} className="dish-images" alt={dishName} />
           <button
             className="remove-button"
             type="button"

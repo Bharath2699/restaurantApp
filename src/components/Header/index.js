@@ -19,25 +19,33 @@ const Header = props => {
 
         return (
           <nav className="header-container">
-            <Link to="/">
-              <h1 className="name">{name}</h1>
-            </Link>
+            <li className="nav-list">
+              <Link to="/">
+                <h1 className="name">{name}</h1>
+              </Link>
+            </li>
 
-            <p className="my-orders-card">My Orders </p>
-            <Link to="/cart">
-              <button type="button">
-                <FaCartArrowDown size={25} />
-              </button>
-            </Link>
+            <li className="nav-list">
+              <p className="my-orders-card">My Orders</p>
+            </li>
+            <li className="nav-list">
+              <Link to="/cart">
+                <button type="button">
+                  <FaCartArrowDown size={25} />
+                </button>
+              </Link>
+            </li>
             <span className="length">{cartList.length}</span>
 
-            <button
-              type="button"
-              className="logout-button"
-              onClick={onClickLogout}
-            >
-              Logout
-            </button>
+            <li className="nav-list">
+              <button
+                type="button"
+                className="logout-button"
+                onClick={onClickLogout}
+              >
+                Logout
+              </button>
+            </li>
           </nav>
         )
       }}
